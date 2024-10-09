@@ -22,6 +22,7 @@ class AppTheme {
 
   ThemeData getThemeData() => ThemeData(
       useMaterial3: true,
+        scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 1),
       colorSchemeSeed: colorList[selectedColor],
         appBarTheme: const AppBarTheme(centerTitle: false),
       );

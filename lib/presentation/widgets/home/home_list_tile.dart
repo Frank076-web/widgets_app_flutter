@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_app/config/index.dart';
+import 'package:go_router/go_router.dart';
+import 'package:widgets_app/config/config.dart';
 
 class HomeListTile extends StatelessWidget {
   final MenuItem menuItem;
@@ -22,7 +23,7 @@ class HomeListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        Navigator.pushNamed(context, menuItem.link);
+        context.push(menuItem.link);
       },
     );
   }
