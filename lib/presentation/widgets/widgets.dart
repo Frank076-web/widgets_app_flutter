@@ -1,1 +1,2 @@
-export './home/index.dart';
+export 'buttons/buttons.dart';
+export 'home/home.dart';
