@@ -23,7 +23,7 @@ class HomeListTile extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subTitle),
       onTap: () {
-        context.push(menuItem.link);
+        context.pushNamed(menuItem.routeName);
       },
     );
   }
