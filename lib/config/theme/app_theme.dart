@@ -21,6 +21,7 @@ class AppTheme {
             'Selected color must be between 0 and ${colorList.length - 1}');
 
   ThemeData getThemeData() => ThemeData(
-        colorSchemeSeed: colorList[selectedColor],
-      );
+      useMaterial3: true,
+      colorSchemeSeed: colorList[selectedColor],
+      appBarTheme: const AppBarTheme(centerTitle: false));
 }
