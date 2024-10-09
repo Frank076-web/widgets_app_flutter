@@ -13,7 +13,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       theme: AppTheme(selectedColor: 1).getThemeData(),
-        home: const HomeScreen()
+      routes: {
+        '/': (context) => const HomeScreen(),
+        '/buttons': (context) => const ButtonsScreen(),
+        '/cards': (context) => const CardsScreen(),
+      },
+      initialRoute: '/',
     );
   }
 }
