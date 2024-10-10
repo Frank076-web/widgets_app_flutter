@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/widgets/widgets.dart';
 
 class AppTutorialScreen extends StatelessWidget {
   static const name = 'tutorial_screen';
@@ -8,9 +9,8 @@ class AppTutorialScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('AppTutorialScreen'),
-      ),
+      backgroundColor: Colors.white,
+      body: AppTutorialView(),
     );
   }
 }
