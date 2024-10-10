@@ -52,4 +52,12 @@ List<MenuItem> appMenuItems = const [
     path: '/snackbar',
     widget: SnackbarScreen(),
   ),
+  MenuItem(
+    title: 'Animated Container',
+    subTitle: 'Stateful widget animado',
+    routeName: AnimatedScreen.name,
+    icon: Icons.check_box_outline_blank_rounded,
+    path: '/animatedContainer',
+    widget: AnimatedScreen(),
+  ),
 ];
