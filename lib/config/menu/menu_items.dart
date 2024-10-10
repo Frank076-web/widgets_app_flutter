@@ -60,4 +60,12 @@ List<MenuItem> appMenuItems = const [
     path: '/animatedContainer',
     widget: AnimatedScreen(),
   ),
+  MenuItem(
+    title: 'Ui Controls + Tiles',
+    subTitle: 'Una serie de controles de FLutter',
+    routeName: UiControlsScreen.name,
+    icon: Icons.car_rental_outlined,
+    path: '/ui-controls',
+    widget: UiControlsScreen(),
+  ),
 ];
