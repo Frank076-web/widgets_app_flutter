@@ -37,11 +37,19 @@ List<MenuItem> appMenuItems = const [
     widget: CardsScreen(),
   ),
   MenuItem(
-    title: 'ProgressIdicators',
+    title: 'Progress Idicators',
     subTitle: 'Generales y controlados',
     routeName: ProgressScreen.name,
     icon: Icons.refresh_rounded,
     path: '/progressScreen',
     widget: ProgressScreen(),
+  ),
+  MenuItem(
+    title: 'Snackbars y Diálogos',
+    subTitle: 'Indicadores en pantalla',
+    routeName: SnackbarScreen.name,
+    icon: Icons.info_outline,
+    path: '/snackbar',
+    widget: SnackbarScreen(),
   ),
 ];

@@ -1,16 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/widgets/snackbar/snackbar.dart';
 
 class SnackbarScreen extends StatelessWidget {
   static const name = 'snackbar_screen';
 
   const SnackbarScreen({super.key});
 
+  void _showCustomSnackbar(BuildContext context) {
+    ScaffoldMessenger.of(context).clearSnackBars();
+
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: const Text('Hola mundo'),
+        duration: const Duration(seconds: 2),
+        action: SnackBarAction(
+            label: 'Ok',
+            onPressed: () {
+              ScaffoldMessenger.of(context).clearSnackBars();
+            }),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('SnackbarScreen'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Snackbars y Diálogos'),
       ),
+      floatingActionButton: FloatingActionButton.extended(
+        label: const Text('Mostrar Snackbar'),
+        icon: const Icon(Icons.remove_red_eye_outlined),
+        onPressed: () => _showCustomSnackbar(context),
+      ),
+      body: const SnackbarView(),
     );
   }
 }
