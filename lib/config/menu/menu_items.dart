@@ -76,4 +76,12 @@ List<MenuItem> appMenuItems = const [
     path: '/tutorial',
     widget: AppTutorialScreen(),
   ),
+  MenuItem(
+    title: 'Infinite Scroll y pull',
+    subTitle: 'Vistas infinitas y pull to refresh',
+    routeName: InfiniteScrollScreen.name,
+    icon: Icons.list_alt_outlined,
+    path: '/infinite',
+    widget: InfiniteScrollScreen(),
+  ),
 ];
