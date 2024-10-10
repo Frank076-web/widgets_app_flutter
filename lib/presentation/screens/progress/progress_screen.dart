@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/presentation/widgets/widgets.dart';
 
 class ProgressScreen extends StatelessWidget {
   static const name = 'progress_screen';
@@ -8,9 +9,7 @@ class ProgressScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('ProgressScreen'),
-      ),
+      body: ProgressView()
     );
   }
 }
