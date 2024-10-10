@@ -68,4 +68,12 @@ List<MenuItem> appMenuItems = const [
     path: '/ui-controls',
     widget: UiControlsScreen(),
   ),
+  MenuItem(
+    title: 'Introducción a la aplicación',
+    subTitle: 'Pequeño tutorial introductorio',
+    routeName: AppTutorialScreen.name,
+    icon: Icons.accessibility_rounded,
+    path: '/tutorial',
+    widget: AppTutorialScreen(),
+  ),
 ];
