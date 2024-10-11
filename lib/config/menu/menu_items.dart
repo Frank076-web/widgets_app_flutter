@@ -84,4 +84,12 @@ List<MenuItem> appMenuItems = const [
     path: '/infinite',
     widget: InfiniteScrollScreen(),
   ),
+  MenuItem(
+    title: 'Counter con Riverpod',
+    subTitle: 'Contador utilizando gestor de estado riverpod',
+    routeName: CounterScreen.name,
+    icon: Icons.list,
+    path: '/counter',
+    widget: CounterScreen(),
+  ),
 ];
