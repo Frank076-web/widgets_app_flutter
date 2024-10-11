@@ -19,8 +19,7 @@ class AppTheme {
   AppTheme({
     this.isDarkmode = false,
     this.selectedColor = 0,
-  })
-      : assert(selectedColor >= 0, 'Selected color must be non-negative'),
+  })  : assert(selectedColor >= 0, 'Selected color must be non-negative'),
         assert(selectedColor <= colorList.length - 1,
             'Selected color must be between 0 and ${colorList.length - 1}');
 
@@ -30,5 +29,10 @@ class AppTheme {
         // scaffoldBackgroundColor: const Color.fromRGBO(255, 255, 255, 1),
         colorSchemeSeed: colorList[selectedColor],
         appBarTheme: const AppBarTheme(centerTitle: false),
+      );
+
+  AppTheme copyWith({int? selectedColor, bool? isDarkmode}) => AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkmode: isDarkmode ?? this.isDarkmode,
       );
 }
