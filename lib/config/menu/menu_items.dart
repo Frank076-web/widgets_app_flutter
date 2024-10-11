@@ -92,4 +92,12 @@ List<MenuItem> appMenuItems = const [
     path: '/counter',
     widget: CounterScreen(),
   ),
+  MenuItem(
+    title: 'Cambiar Tema',
+    subTitle: 'Cambiar tema de la aplicación',
+    routeName: ThemeChangerScreen.name,
+    icon: Icons.color_lens_outlined,
+    path: '/theme-changer',
+    widget: ThemeChangerScreen(),
+  ),
 ];

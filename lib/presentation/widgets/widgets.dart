@@ -7,4 +7,5 @@ export 'home/home.dart';
 export 'infinite_scroll/infinite_scroll.dart';
 export 'progress/progress.dart';
 export 'snackbar/snackbar.dart';
+export 'theme_changer/theme_changer.dart';
 export 'ui_controls/ui_controls.dart';
